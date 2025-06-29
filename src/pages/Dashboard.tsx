@@ -4,8 +4,7 @@ import {
   TrendingDown, 
   DollarSign, 
   PieChart,
-  ArrowUpRight,
-  ArrowDownRight
+  ArrowUpRight
 } from 'lucide-react'
 import MetricCard from '../components/MetricCard'
 import PortfolioChart from '../components/PortfolioChart'
@@ -20,7 +19,7 @@ const Dashboard: React.FC = () => {
       change: '+12.5%',
       trend: 'up' as const,
       icon: DollarSign,
-      color: 'primary'
+      color: 'primary' as const
     },
     {
       title: 'Monthly Return',
@@ -28,7 +27,7 @@ const Dashboard: React.FC = () => {
       change: '+5.2%',
       trend: 'up' as const,
       icon: TrendingUp,
-      color: 'success'
+      color: 'success' as const
     },
     {
       title: 'Active Investments',
@@ -36,7 +35,7 @@ const Dashboard: React.FC = () => {
       change: '+2',
       trend: 'up' as const,
       icon: PieChart,
-      color: 'primary'
+      color: 'primary' as const
     },
     {
       title: 'Risk Score',
@@ -44,7 +43,7 @@ const Dashboard: React.FC = () => {
       change: '-0.3',
       trend: 'down' as const,
       icon: TrendingDown,
-      color: 'danger'
+      color: 'danger' as const
     }
   ]
 

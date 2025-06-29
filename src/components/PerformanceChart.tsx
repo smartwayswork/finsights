@@ -7,7 +7,7 @@ interface PerformanceChartProps {
 
 const PerformanceChart: React.FC<PerformanceChartProps> = ({ timeframe }) => {
   // Generate data based on timeframe
-  const generateData = (period: string) => {
+  const generateData = () => {
     const baseData = [
       { date: 'Jan', portfolio: 95000, sp500: 94000, volatility: 12 },
       { date: 'Feb', portfolio: 98000, sp500: 96000, volatility: 14 },
@@ -21,7 +21,7 @@ const PerformanceChart: React.FC<PerformanceChartProps> = ({ timeframe }) => {
     return baseData
   }
 
-  const data = generateData(timeframe)
+  const data = generateData()
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
